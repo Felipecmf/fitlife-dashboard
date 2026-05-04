@@ -1,48 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FitLife : TMB</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>FitLife | TMB</title>
 </head>
-<body style="font-family: poppins">
-
+<body>
 
     <nav>
-    <a href="../index.html">Voltar</a>
-    <ul>
-    <li><a href="imc.html">IMC</a></li>
-    <li><a href="tmb.html">TMB</a></li>
-    <li><a href="water.html">Water</a></li>
-    </ul>
+        <a href="../index.html">FitLife</a>
+
+        <ul class="nav-links">
+            <li><a class="nav-link" href="../index.html">Home</a></li>
+            <li><a class="nav-link" href="imc.html">IMC</a></li>
+            <li><a class="nav-link" id="nav-active" href="tmb.html">TMB</a></li>
+            <li><a class="nav-link" href="water.html">Água</a></li>
+        </ul>
     </nav>
-        <main>
+    
+    <main>
         <section>
-            <h1>Taxa metabólica basal</h1>
+            <h1>Taxa Metabólica Basal</h1>
+
             <form>
+
                 <label for="gender">Gênero</label>
                 <select id="gender">
-                    <option value="">Masculino</option>
-                    <option value="">Feminino</option>
+                    <option value="male">Masculino</option>
+                    <option value="female">Feminino</option>
                 </select>
 
                 <label for="weight">Peso (kg)</label>
-                <input type="number" id="weight" placeholder="Ex: 70" required>
+                <input type="number" id="weight" placeholder="Ex: 70">
 
                 <label for="height">Altura (cm)</label>
-                <input type="number" id="weight" placeholder="Ex: 175" required>
+                <input type="number" id="height" placeholder="Ex: 175">
 
                 <label for="age">Idade (anos)</label>
-                <input type="number" id="age" placeholder="Ex: 18" required>
+                <input type="number" id="age" placeholder="Ex: 25">
 
-                <button type="submit">Voltar</button>
+                <button type="submit">Calcular Calorias</button>
             </form>
 
-            <a href="../index.html"></a>
+            <div>
+                <p>Gasto calórico basal</p>
+                <h2>0000</h2>
+                <p>Kcal/dia</p>
+            </div>
+
+            <a href="../index.html">Voltar</a>
         </section>
     </main>
+
 </body>
 </html>
