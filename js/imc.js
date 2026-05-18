@@ -40,9 +40,11 @@ function calculateIMC(event) {
     }
 
 
-    valueText.innerText = imc
+    valueText.innerText = imc.toFixed(2)
     valueText.style.color = color
 
     descText.innerText = classification
     descText.style.color = color
+
+    resultBox.classList.add('show')
 }
