@@ -60,14 +60,15 @@
                     <input type="number" id="age" placeholder="Ex: 25">
                 </div>
 
-                <button class="action-btn" type="submit">Calcular Calorias</button>
+                <button class="action-btn" type="submit"
+                 onclick="calculateTMB(event)">Calcular Calorias</button>
                 <a class="action-btn btn-back" href="../index.html">Voltar</a>
 
             </form>
 
             <div class="result-box">
                 <p>Gasto calórico basal</p>
-                <h2>0000</h2>
+                <h2 id = "tmb-value">0000</h2>
                 <p>Kcal/dia</p>
             </div>
 
